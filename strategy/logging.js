@@ -8,7 +8,6 @@
 const {loggingModes} = require('../template/logging/logging-mode');
 const {console: consoleMode, file: filemode} = loggingModes;
 
-console.log(consoleMode, filemode);
 
 class LogStrategy{
     constructor(strategy,data){
@@ -35,8 +34,6 @@ function main(){
     log.log('Info');
     log.changeStrategy(filemode)
     log.log('warn')
-    
-
     
 }
 
